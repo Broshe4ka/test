@@ -90,6 +90,7 @@
   padding: 8px 16px;
   border: 1px solid #dfdfdf;
   border-radius: 4px;
+  transition: 0.3s ease-in-out;
 }
 
 .offer__btn {
@@ -101,6 +102,11 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.offer__btn:hover {
+  background: #171717;
 }
 
 .select {
@@ -186,22 +192,26 @@
   background-color: #f2f2f2;
 }
 
+.pay-selected {
+  border: 1px solid #0075ff;
+}
+
 @media (max-width: 830px) {
   .pay__body {
     max-width: 770;
+  }
+  .pay__row {
+    flex-direction: column;
+  }
+  .pay-bot {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 767px) {
   .pay__body {
     max-width: none;
     padding: 0 12px;
-  }
-  .pay-bot {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .pay__row {
-    flex-direction: column;
   }
 }
 

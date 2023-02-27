@@ -24,3 +24,12 @@ let select = function () {
 };
 
 select();
+
+$('.pay-bot__radio').click(function() {
+  $('.pay-bot__radio input').each(function() {
+    $(this).prop('checked', false)
+    $(this).parent().removeClass('pay-selected')
+  })
+  $(this).find('input').prop('checked', true)
+  $(this).addClass('pay-selected')
+})
